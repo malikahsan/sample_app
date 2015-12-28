@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 require 'rails_helper'
 
 RSpec.describe "StaticPages", type: :request do
@@ -23,4 +24,15 @@ RSpec.describe "StaticPages", type: :request do
   		expect(response).to have_http_status(200)
   	end
   end
+=======
+require 'spec_helper'
+
+describe "Static Pages" do
+  describe "Home Pages" do
+    it "should have the content 'Sample App'" do
+      #visit '/static_pages/home'
+      page.should have_content('Sample App')
+    end
+  end
+>>>>>>> static-pages
 end
